@@ -1,0 +1,20 @@
+{
+    "name": "xiaoqing/wechat-auth-login",
+    "description": "this is wechat auth login",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xiaoqing",
+            "email": "635265039@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Wechat\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.4"
+    }
+}
