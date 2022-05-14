@@ -29,7 +29,8 @@ class Official{
         return $app->official();
     }
 
-    public function oauth(){
+    public function oauth($url=null){
+        $this->official['callback']=$this->official['callback'].$url;
         $path = 'oauth2/authorize';
         return $this->buildAuthUrlFromBase("https://open.weixin.qq.com/connect/{$path}");
     }
